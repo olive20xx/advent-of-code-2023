@@ -1,0 +1,5 @@
+{
+  "name": "advent-of-code-2023",
+  "packageManager": "yarn@4.3.0",
+  "type": "module"
+}
