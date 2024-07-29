@@ -8,7 +8,7 @@ async function processLineByLine() {
 
   const rl = readline.createInterface({
     input: fileStream,
-    crlfDelay: Infinity
+    crlfDelay: Infinity,
   })
   // Note: we use the crlfDelay option to recognize all instances of CR LF
   // ('\r\n') in input.txt as a single line break.
@@ -22,13 +22,6 @@ async function processLineByLine() {
 await processLineByLine()
 
 let total = 0
-
-const test = [
-  '1abc2',
-  'pqr3stu8vwx',
-  'a1b2c3d4e5f',
-  'treb7uchet',
-]
 
 input.forEach((line) => {
   let firstDigit
