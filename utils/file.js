@@ -1,5 +1,5 @@
-import fs from 'fs'
-import readline from 'readline'
+import fs from 'node:fs'
+import readline from 'node:readline'
 
 export async function getLineByLineInput(filename) {
   const input = []
@@ -8,7 +8,7 @@ export async function getLineByLineInput(filename) {
 
   const rl = readline.createInterface({
     input: fileStream,
-    crlfDelay: Infinity
+    crlfDelay: Infinity,
   })
   // Note: we use the crlfDelay option to recognize all instances of CR LF
   // ('\r\n') in input.txt as a single line break.
